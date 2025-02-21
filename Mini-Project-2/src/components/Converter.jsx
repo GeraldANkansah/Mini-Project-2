@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "./card";
+import Card from "./Card";
 
 function Converter() {
   const [inputValue, setInputValue] = useState("0");
@@ -52,10 +52,10 @@ function Converter() {
 
       
       <div className="adjust-buttons">
-        <button onClick={() => adjustValue(5)}>+5</button>
-        <button onClick={() => adjustValue(-5)}>-5</button>
-        <button onClick={() => adjustValue(1)}>+1</button>
-        <button onClick={() => adjustValue(-1)}>-1</button>
+        <button onClick={() => adjustValue(5)}>Increment +5</button>
+        <button onClick={() => adjustValue(-5)}>Decrement -5</button>
+        <button onClick={() => adjustValue(1)}>Increment by 1</button>
+        <button onClick={() => adjustValue(-1)}>Decrement by 1</button>
       </div>
 
       <h3>Saved Conversions:</h3>
